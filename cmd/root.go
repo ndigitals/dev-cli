@@ -29,13 +29,16 @@ var cfgFile string
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
 	Use:   "dev-cli",
-	Short: "",
-	Long: `A longer description that spans multiple lines and likely contains
-examples and usage of using your application. For example:
+	Short: "A local Docker-based development command runner.",
+	Long: `A local developmet command runner that uses Docker tools for
+consistent environment setup with minimal requirements. This tool allows
+multiple developers and collaborators to quickly get started with local
+development without a large amount of tooling undertanding and requirements.
+For example:
 
-Cobra is a CLI library for Go that empowers applications.
-This application is a tool to generate the needed files
-to quickly create a Cobra application.`,
+  "dev-cli start"
+
+Will bring up the development environment.`,
 	// Uncomment the following line if your bare application
 	// has an action associated with it:
 	// Run: func(cmd *cobra.Command, args []string) { },
